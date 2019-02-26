@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/hotel_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/hotel_image"
+        android:text="Nombre"
+        android:layout_marginStart="35dp"
+        tools:text="Marinamar"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/hotel_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/hotel_name"
+        android:text="estrellas"
+        android:layout_marginStart="20dp"
+        tools:text="4"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/estrellas"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/hotel_star"
+        android:src="@drawable/star"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/hotel_localidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Localidad"
+        android:layout_below="@+id/hotel_name"
+        android:layout_alignStart="@+id/hotel_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        tools:text="Mojacar" />
+
+    <TextView
+        android:id="@+id/hotel_provincia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provincia"
+        android:layout_below="@+id/hotel_star"
+        android:layout_alignStart="@+id/hotel_star"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="-20dp"
+        tools:text="Almería"/>
+
+</RelativeLayout>
